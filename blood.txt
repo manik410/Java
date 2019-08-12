@@ -1,0 +1,37 @@
+//Creating database
+
+create database bloodbank;
+
+
+//Now using the database which we have created
+
+use bloodbank;
+
+
+//now creating tables
+//First table holds the login/signup information
+
+create table signup(Name varchar(100),Password varchar(100),Contact double);
+
+
+//inserting values into table
+
+
+insert into signup values('manik','manik@123',9041035777);
+insert into signup values('mitisha','Mitisha1999@',7009894624);
+insert into signup values('mohit','MOHIT7023',9915370234);
+insert into signup values('amit','991amit',9914448532);
+
+
+//Creating another table which holds details about donor and recipient
+
+create table Donor(Username varchar(100),Location varchar(100),Age int,Blood_Group varchar(100),Register_Date date,Available varchar(100));
+
+
+
+//inserting values into table
+
+insert into Donor values('manik410','Ludhiana',19,'A+','2019-08-08','Yes');
+insert into Donor values('mishu76','Rampura',20,'O+','2019-08-08','Yes');
+
+
